@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ── Base Background ── */
+  --cream: #f0ead8;
+  --cream-dim: #e2d9c3;
+  --cream-deep: #cfc5aa;
+  --parchment: #f7f3e9;
+
+  /* ── Earthy Brand Colors ── */
+  --army: #3d4a35;
+  --army-mid: #4f5e45;
+  --army-light: #6b7d5e;
+  --army-pale: #8fa082;
+  --moss: #2a3324;
+
+  /* ── Accent Earth Tones ── */
+  --earth: #7a6448;
+  --earth-light: #a68b65;
+  --sand: #b5a48a;
+
+  /* ── Text System ── */
+  --text: #3a3d32;
+  --text-muted: #7a7a6a;
+
+  /* ── Border System ── */
+  --border: rgba(61, 74, 53, 0.18);
+  --border-strong: rgba(61, 74, 53, 0.32);
+
+  /* ── Shadows (soft premium feel) ── */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  /* ── Radius System ── */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* ── Layout System ── */
+  --container-padding: 7vw;
+  --section-spacing: 120px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--parchment);
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+
+
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+
+
+
+.serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.sans {
+  font-family: "Outfit", sans-serif;
+}
+
+.mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+
+
+
+.text-cream { color: var(--cream); }
+.text-army { color: var(--army); }
+.text-earth { color: var(--earth); }
+.text-muted { color: var(--text-muted); }
+
+.bg-cream { background: var(--cream); }
+.bg-parchment { background: var(--parchment); }
+.bg-army { background: var(--army); }
+.bg-moss { background: var(--moss); }
+
+
+
+
+.border-soft {
+  border: 1px solid var(--border);
+}
+
+.border-strong {
+  border: 1px solid var(--border-strong);
+}
+
+
+
+
+::selection {
+  background: var(--army);
+  color: var(--cream);
 }
