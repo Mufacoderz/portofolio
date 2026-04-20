@@ -6,7 +6,7 @@ export default function Footer() {
         <em className="italic font-light text-earth-light">Fadil</em>
       </span>
       <span className="font-jetbrains text-[0.62rem] text-army-pale tracking-[0.08em]">
-        © 2025 · Built with Next.js · Vercel
+        © 2026
       </span>
     </footer>
   );

@@ -1,8 +1,8 @@
 const contactLinks = [
-  { label: "Email",     val: "hello@fadil.dev",    href: "mailto:hello@fadil.dev" },
+  { label: "Email",     val: "mfadil.coder.@gmail.com",    href: "mailto:hello@fadil.dev" },
   { label: "GitHub",    val: "@Mufacoderz",         href: "https://github.com/Mufacoderz" },
   { label: "LinkedIn",  val: "Muhammad Fadil",      href: "#" },
-  { label: "Portfolio", val: "fadil.dev",           href: "#" },
+  { label: "No. Hp", val: "+62 813 4872 6973",           href: "#" },
 ];
 
 export default function Contact() {

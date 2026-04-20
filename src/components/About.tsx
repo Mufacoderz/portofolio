@@ -15,7 +15,7 @@ const asideItems = [
     group: "// find me",
     cards: [
       { label: "GitHub", val: "@Mufacoderz", sub: "45+ repos  ·  273 Stars  ·  859 Commits" },
-      { label: "Email", val: "hello@fadil.dev", sub: "Responds within 24 hours" },
+      { label: "Email", val: "mfadil.coder@gmail.com", sub: "Responds within 24 hours" },
     ],
   },
 ];
@@ -23,7 +23,7 @@ const asideItems = [
 const education = [
   {
     badge: "High School",
-    school: "SMK Muhammadiyah",
+    school: "SMK Muhammadiyah Loa Janan",
     jurusan: "Teknik Komputer & Jaringan",
     year: "Lulus 2022 · Samarinda",
   },
@@ -37,19 +37,20 @@ const education = [
 
 const experience = [
   {
-    badge: "Freelance",
-    role: "Fullstack Developer",
-    company: "Remote · Self-employed",
-    period: "Jan 2023 – sekarang",
-    desc: "Building web apps & SaaS products for clients. Stack: Next.js, Laravel, Supabase.",
+    badge: "Internship",
+    role: "Logistic Intern",
+    company: "PT. Anugerah Bara Kaltim · Kutai kartanegara",
+    period: "Jun 2022 – Dec 2022",
+    desc: "Handled inventory data entry, managed outgoing goods records, scanned and archived logistics documents, and verified incoming shipments to ensure accuracy and proper documentation.",
   },
   {
-    badge: "Internship",
-    role: "Frontend Developer",
-    company: "Startup Lokal · Samarinda",
-    period: "Jun 2022 – Dec 2022",
-    desc: "Developed UI components and landing pages using React & Tailwind CSS.",
+    badge: "Self-initiated",
+    role: "Fullstack Developer (Personal Projects)",
+    company: "Independent",
+    period: "September 2024 – sekarang",
+    desc: "Built and developed several web applications using Next.js, Laravel, and Supabase. Focused on creating scalable features, authentication systems, and responsive UI.",
   },
+  
 ];
 
 const TABS = ["Education", "Experience"] as const;
@@ -193,9 +194,8 @@ export default function About() {
                   key={tab}
                   ref={(el) => { tabRefs.current[i] = el; }}
                   onClick={() => setActiveTab(tab)}
-                  className={`relative z-10 font-jetbrains text-[0.52rem] tracking-[0.1em] uppercase px-5 py-[7px] bg-transparent border-none cursor-pointer transition-colors duration-200 ${
-                    activeTab === tab ? "text-cream" : "text-army-pale hover:text-army-light"
-                  }`}
+                  className={`relative z-10 font-jetbrains text-[0.52rem] tracking-[0.1em] uppercase px-5 py-[7px] bg-transparent border-none cursor-pointer transition-colors duration-200 ${activeTab === tab ? "text-cream" : "text-army-pale hover:text-army-light"
+                    }`}
                 >
                   {tab}
                 </button>
