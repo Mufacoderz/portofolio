@@ -24,7 +24,6 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-[7vw] py-7 bg-gradient-to-b from-parchment/95 to-transparent backdrop-blur-sm">
-        {/* Logo */}
         <Link href="#hero" className="no-underline" onClick={close}>
           <span className="font-cormorant font-semibold text-xl tracking-widest text-army">
             Muhammad
@@ -32,7 +31,6 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop links */}
         <ul className="hidden md:flex gap-10 list-none">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -114,13 +112,6 @@ export default function Navbar() {
                 ))}
               </ul>
 
-              {/* Footer info */}
-              <div className="mt-8 flex items-center gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-army-light" />
-                <span className="font-jetbrains text-[0.52rem] tracking-[0.1em] uppercase text-army-pale">
-                  Available for work
-                </span>
-              </div>
             </motion.div>
           </>
         )}

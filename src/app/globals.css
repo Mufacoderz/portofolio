@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── CUSTOM PROPERTIES ── */
 :root {
   --cream: #f0ead8;
   --cream-dim: #e2d9c3;
@@ -42,7 +41,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── PAPER TEXTURE ── */
 body::after {
   content: "";
   position: fixed;
@@ -53,12 +51,10 @@ body::after {
   mix-blend-mode: multiply;
 }
 
-/* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: var(--cream-dim); }
 ::-webkit-scrollbar-thumb { background: var(--army-light); border-radius: 2px; }
 
-/* ── CURSOR ── */
 #cur {
   position: fixed;
   width: 9px; height: 9px;
@@ -85,7 +81,6 @@ body::after {
 body.ch #cur { width: 5px; height: 5px; }
 body.ch #cur-r { width: 56px; height: 56px; border-color: var(--army); }
 
-/* ── SCROLL REVEAL ── */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -97,7 +92,6 @@ body.ch #cur-r { width: 56px; height: 56px; border-color: var(--army); }
 .rd3 { transition-delay: 0.3s; }
 .rd4 { transition-delay: 0.4s; }
 
-/* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -107,7 +101,6 @@ body.ch #cur-r { width: 56px; height: 56px; border-color: var(--army); }
 .animate-fade-up-3 { opacity: 0; animation: fadeUp 0.9s 0.5s ease forwards; }
 .animate-fade-up-4 { opacity: 0; animation: fadeUp 0.9s 0.65s ease forwards; }
 
-/* ── DIVIDER ── */
 .section-divider {
   height: 1px;
   background: linear-gradient(to right, var(--border-strong), transparent);
