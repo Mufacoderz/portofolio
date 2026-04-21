@@ -1,46 +1,13 @@
-const projects = [
-  {
-    num: "01", name: "Dev", nameItalic: "Note",
-    desc: "Developer snippet manager with public explore page, syntax highlighting, collections & smart filtering.",
-    tags: ["Next.js 15", "TypeScript", "Prisma", "Supabase"],
-    href: "#",
-  },
-  {
-    num: "02", name: "Mufadz", nameItalic: "Portal",
-    desc: "Islamic utility app — Quran, prayer schedules, doa, and AI chatbot powered by Groq.",
-    tags: ["React.js", "Groq AI", "Express", "MySQL"],
-    href: "#",
-  },
-  {
-    num: "03", name: "Daily", nameItalic: "Fit",
-    desc: "Fitness tracker with workout studio, exercise plans, daily checklists, and stats visualization.",
-    tags: ["Vue.js", "App Router", "Tailwind", "Charts"],
-    href: "#",
-  },
-  {
-    num: "04", name: "Game", nameItalic: "fy",
-    desc: "TopUp Diamonds Games webiste with payment gateway integration.",
-    tags: ["React", "Laravel", "Midtrans", "Game"],
-    href: "#",
-  },
-  {
-    num: "05", name: "TechGear", nameItalic: "Store",
-    desc: "E-commerce storefront for tech products with cart, orders, and admin dashboard.",
-    tags: ["PHP", "MVC", "MySQL"],
-    href: "#",
-  },
-];
+import { projects} from "@/data/projek"
 
 export default function Projects() {
   return (
     <section id="projects" className="bg-parchment px-[7vw] py-[120px]">
-      {/* Label */}
       <div className="flex items-center uppercase gap-3.5 font-jetbrains text-[0.62rem] tracking-[0.18em] text-army-light mb-5">
         <span className="block w-8 h-px bg-army-light shrink-0" />
         Selected work
       </div>
 
-      {/* Title */}
       <h2
         className="reveal font-cormorant font-light leading-[1.1] tracking-tight text-army mb-[72px]"
         style={{ fontSize: "clamp(2.2rem, 4vw, 3.8rem)" }}

@@ -1,20 +1,13 @@
-const stackCards = [
-  { cat: "Frontend",        items: ["Next.js / React", "TypeScript", "Tailwind CSS", "Framer Motion", "Zustand"] },
-  { cat: "Backend",         items: ["Node.js / Express", "Laravel / PHP", "Prisma ORM", "REST API", "NextAuth"] },
-  { cat: "Database & Infra",items: ["PostgreSQL", "Supabase", "MySQL", "Vercel", "Git / GitHub"] },
-  { cat: "AI & Tools",      items: ["Groq / LLaMA", "OpenAI API", "Figma / Canva", "VS Code", "Postman"] },
-];
+import { stackCards} from "@/data/stack"
 
 export default function Stack() {
   return (
     <section id="stack" className="bg-army px-[7vw] py-[120px]">
-      {/* Label */}
       <div className="flex items-center uppercase gap-3.5 font-jetbrains text-[0.62rem] tracking-[0.18em] text-army-pale mb-5">
         <span className="block w-8 h-px bg-army-pale shrink-0" />
         Tech stack
       </div>
 
-      {/* Title */}
       <h2
         className="reveal font-cormorant font-light leading-[1.1] tracking-tight text-cream mb-[72px]"
         style={{ fontSize: "clamp(2.2rem, 4vw, 3.8rem)" }}
