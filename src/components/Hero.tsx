@@ -35,7 +35,7 @@ export default function Hero() {
 
         <div className="animate-fade-up-4 flex items-center mt-10 gap-4">
           <Link href="#projects" className="btn-earth">
-            View Work →
+            View Resume
           </Link>
           <Link href="#contact" className="btn-ghost">
             Get in touch
@@ -47,7 +47,7 @@ export default function Hero() {
         {stats.map((s, i) => (
           <div
             key={`${s.title}-${i}`}
-            className="hero-stat flex items-start gap-4 py-3 border-b border-[var(--border)] last:border-none"
+            className="hero-stat flex items-start gap-4 py-3 border-b border-[var(--border)] "
           >
             <div className="font-cormorant font-semibold text-[2.5rem] md:text-[2.8rem] text-army leading-none shrink-0">
               {s.big}

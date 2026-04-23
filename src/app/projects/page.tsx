@@ -2,12 +2,14 @@ import { projects } from "@/data/projek";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
+import Navbar from "@/components/Navbar";
+
 
 export default function ProjectsPage() {
     return (
         <>
-            <main className="bg-parchment min-h-screen px-[7vw] py-[120px]">
-                {/* Header */}
+            <Navbar />
+            <main className="bg-parchment min-h-screen px-[7vw] py-[60px] sm:py-[120px] ">
                 <div className="mb-4 flex items-center gap-3.5 font-jetbrains text-[0.62rem] uppercase tracking-[0.18em] text-army-light">
                     <span className="block h-px w-8 shrink-0 bg-army-light" />
                     All work

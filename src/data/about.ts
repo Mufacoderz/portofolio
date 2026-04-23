@@ -29,7 +29,7 @@ export const asideItems = [
         group: "// base & focus",
         cards: [
             { label: "Location", val: "East Kalimantan, Indonesia", sub: "UTC+8 · Samarinda" },
-            { label: "Focus areas", val: "Fullstack · AI · SaaS", sub: "Web apps, developer tools, AI-powered products" },
+            { label: "Focus areas", val: "Fullstack · AI · Design", sub: "Web apps, developer tools, Web design" },
         ],
     },
     {

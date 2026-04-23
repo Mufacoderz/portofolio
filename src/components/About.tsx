@@ -28,13 +28,11 @@ export default function About() {
   return (
     <section id="about" className="bg-cream px-[7vw] py-[100px]">
 
-      {/* eyebrow */}
       <div className="flex items-center gap-3 font-jetbrains text-[0.58rem] tracking-[0.2em] uppercase text-army-pale mb-5">
         <span className="block w-7 h-px bg-army-pale shrink-0" />
         About me
       </div>
 
-      {/* headline */}
       <h2
         className="font-cormorant font-light leading-[1.05] tracking-tight text-army mb-[60px]"
         style={{ fontSize: "clamp(2.3rem, 4vw, 3.4rem)" }}
@@ -181,7 +179,7 @@ export default function About() {
               transition={{ duration: 0.18, ease: "easeOut" }}
             >
               {activeTab === "Education" && (
-                <div className="grid grid-cols-2 gap-0.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-0.5">
                   {education.map((edu) => (
                     <div
                       key={edu.school}
@@ -206,7 +204,7 @@ export default function About() {
               )}
 
               {activeTab === "Experience" && (
-                <div className="flex flex-col gap-0.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-0.5">
                   {experience.map((exp) => (
                     <div
                       key={exp.role}

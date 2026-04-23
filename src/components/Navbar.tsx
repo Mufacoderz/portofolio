@@ -2,13 +2,13 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { User, Folder, Mail, Layers3, X, AlignJustify } from "lucide-react";
+import { Home, Folder, Mail, Layers3, X, AlignJustify } from "lucide-react";
 
 const navLinks = [
-  { href: "#about",    label: "About",   icon: User },
-  { href: "#projects", label: "Projects", icon: Folder },
-  { href: "#stack",    label: "Stack",   icon: Layers3 },
-  { href: "#contact",  label: "Contact", icon: Mail },
+  { href: "/",    label: "Home",   icon: Home },
+  { href: "/projects", label: "Projects", icon: Folder },
+  { href: "/#stack",    label: "Stack",   icon: Layers3 },
+  { href: "/#contact",  label: "Contact", icon: Mail },
 ];
 
 const left  = navLinks.slice(0, 2);
