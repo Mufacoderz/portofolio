@@ -89,13 +89,6 @@ export default async function ProjectDetailPage({
                         )}
 
                         <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-3 mb-3 flex-wrap">
-                                {project.year && (
-                                    <span className="font-jetbrains text-[0.62rem] tracking-[0.14em] text-text-muted">
-                                        {project.year}
-                                    </span>
-                                )}
-                            </div>
 
                             <h1
                                 className="font-cormorant font-semibold leading-[1.05] tracking-tight text-army"
